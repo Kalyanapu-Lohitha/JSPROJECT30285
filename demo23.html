@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            function demo1() //var-function scope
+            {
+                document.writeln("I am in DEMO-1</br>")
+                {
+                    var a=10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a="+a+"</br>")
+                }
+                document.writeln("a="+a+"</br>")
+            }
+            
+            function demo2() //let-block scope
+            {
+                document.writeln("I am in DEMO-2</br>")
+                {
+                    let a=10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a="+a+"</br>") //accessed as it is inside block
+                }
+                document.writeln("a="+a+"</br>")
+            }
+            
+            function demo3() //const-block scope, can not reassign value
+            {
+                document.writeln("I am in DEMO-3</br>")
+                {
+                    const a=10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a="+a+"</br>")
+                }
+                document.writeln("a="+a+"</br>")
+            }
+
+            //demo1()
+            //demo2()
+            //demo3()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
